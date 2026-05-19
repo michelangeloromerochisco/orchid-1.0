@@ -1,4 +1,4 @@
-# 🌸 Orchid 1.0
+﻿# 🌸 Orchid 1.0
 
 **First competitive LLM trained and aligned in Colombia** — 2B ternary-weight model built on [BitNet b1.58-2B-4T](https://huggingface.co/microsoft/bitnet-b1.58-2B-4T), aligned with ORPO on a single RTX 3050 laptop (4 GB VRAM).
 
@@ -40,7 +40,7 @@ huggingface-cli download MicheRomChis/orchid-1.0 \
   --local-dir ./orchid-models
 ```
 
-**Step 2 — Build ternative** (requires cmake 3.18+, C++17 compiler)
+**Step 2 — Build ternative** (Windows and Linux only — macOS not supported; requires cmake 3.18+, C++17 compiler)
 ```bash
 git clone --depth 1 https://github.com/michelangeloromerochisco/ternative
 cd ternative
@@ -50,7 +50,7 @@ cd ..
 
 **Step 3 — Generate**
 ```bash
-# Linux / macOS
+# Linux
 ./ternative/build/ternative \
   --model ./orchid-models/ggml-model-i2_s.gguf \
   --lora  ./orchid-models/dpo_aligned-lora.gguf \
@@ -120,7 +120,7 @@ ARC improvement confirms the reasoning fine-tuning transferred. HellaSwag and MM
 | GPU VRAM | 0 (CPU-only) | 4 GB (RTX 3050 class) |
 | RAM | 8 GB | 16 GB |
 | Storage | 1.3 GB | 2 GB |
-| OS | Windows / Linux / macOS | — |
+| OS | Windows / Linux | macOS not supported (ARM support planned) |
 
 **GPU mode**: all 30 transformer layers on GPU using F16 + INT8 mixed precision (~3.3 GB VRAM), ~6–7 tok/s.  
 **CPU mode**: ~6 tok/s with AVX2 (any Intel/AMD CPU since ~2013).
