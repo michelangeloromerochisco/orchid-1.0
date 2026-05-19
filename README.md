@@ -14,10 +14,10 @@
 Orchid 1.0 is a 2B-parameter language model with **ternary weights** ({−1, 0, +1} at 1.58 bits/weight). It was fine-tuned and aligned entirely on consumer hardware — no cloud compute — through three stages:
 
 1. **SFT-A** — Reasoning and chain-of-thought (50 samples, validation run)
-2. **SFT-B** — Identity, knowledge, and bilingual capability (5,500 samples, ~88 h)
+2. **SFT-B** — Identity, knowledge, and multilingual alignment (5,500 samples, ~88 h)
 3. **ORPO-3** — Preference alignment without a reference model (2,104 pairs, ~54 h)
 
-The model is bilingual (English + Spanish), refuses harmful requests, and runs on any PC with 8 GB RAM.
+The model is multilingual (inherits BitNet's broad language coverage; alignment data focused on English and Spanish), refuses harmful requests, and runs on any PC with 8 GB RAM.
 
 > **Inference note**: Orchid uses the BitNet I2_S ternary format with a separate LoRA adapter. Standard llama.cpp cannot serve this combination. Use **[ternative](https://github.com/michelangeloromerochisco/ternative)** — the purpose-built inference engine.
 
