@@ -3,7 +3,6 @@
 **First competitive LLM trained and aligned in Colombia** — 2B ternary-weight model built on [BitNet b1.58-2B-4T](https://huggingface.co/microsoft/bitnet-b1.58-2B-4T), aligned with ORPO on a single RTX 3050 laptop (4 GB VRAM).
 
 [![Hugging Face](https://img.shields.io/badge/🤗%20Model-MicheRomChis%2Forchid--1.0-yellow)](https://huggingface.co/MicheRomChis/orchid-1.0)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/michelangeloromerochisco/orchid-1.0/blob/main/orchid_colab.ipynb)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/Paper-Technical%20Report-red)](https://huggingface.co/MicheRomChis/orchid-1.0/blob/main/orchid-1-0-technical-paper.pdf)
 
@@ -24,12 +23,6 @@ The model is multilingual (inherits BitNet's broad language coverage; alignment 
 ---
 
 ## Quick Start
-
-### Try instantly (no install)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/michelangeloromerochisco/orchid-1.0/blob/main/orchid_colab.ipynb)
-
-CPU-only, free, no time limit. First run ~8–10 min (LoRA merge); subsequent runs ~30 s.
 
 ### Run locally
 
