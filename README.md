@@ -5,6 +5,7 @@
 [![Hugging Face](https://img.shields.io/badge/🤗%20Model-MicheRomChis%2Forchid--1.0-yellow)](https://huggingface.co/MicheRomChis/orchid-1.0)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/Paper-Technical%20Report-red)](https://huggingface.co/MicheRomChis/orchid-1.0/blob/main/orchid-1-0-technical-paper.pdf)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20452163.svg)](https://doi.org/10.5281/zenodo.20452163)
 
 ---
 
@@ -179,6 +180,8 @@ Full methodology, training details, failure modes, and architecture analysis:
 
 **[Orchid 1.0: A Reproducible Recipe for Aligned Ternary-Weight Language Models on Consumer Hardware](https://huggingface.co/MicheRomChis/orchid-1.0/blob/main/orchid-1-0-technical-paper.pdf)**
 
+Also available on Zenodo with DOI: [10.5281/zenodo.20452163](https://doi.org/10.5281/zenodo.20452163)
+
 ---
 
 ## What's Next — Terse
@@ -190,13 +193,14 @@ Orchid 1.0 is the proof of concept. **Terse** is the follow-up: a clean-room ter
 ## Citation
 
 ```bibtex
-@software{orchid_2026,
-  title   = {Orchid 1.0: First Competitive LLM Trained and Aligned in Colombia},
-  author  = {Romero Chisco, Michelangelo},
-  year    = {2026},
-  url     = {https://github.com/michelangeloromerochisco/orchid-1.0},
-  license = {Apache-2.0},
-  note    = {Fine-tuned from Microsoft BitNet b1.58-2B-4T}
+@misc{romerochisco2026orchid,
+  title     = {Orchid 1.0: A Reproducible Recipe for Aligned Ternary-Weight Language Models on Consumer Hardware},
+  author    = {Romero Chisco, Michelangelo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.20452163},
+  url       = {https://doi.org/10.5281/zenodo.20452163},
+  publisher = {Zenodo},
+  note      = {Preprint. Fine-tuned from Microsoft BitNet b1.58-2B-4T}
 }
 ```
 
